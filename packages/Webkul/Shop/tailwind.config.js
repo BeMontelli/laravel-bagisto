@@ -29,16 +29,16 @@ module.exports = {
 
         extend: {
             colors: {
-                navyBlue: "#060C3B",
-                lightOrange: "#F6F2EB",
-                darkGreen: '#40994A',
-                darkBlue: '#0044F2',
-                darkPink: '#F85156',
+                navyBlue: "#F24C00",
+                lightOrange: "#E7E7E7",
+                darkGreen: '#00FF00',
+                darkBlue: '#0000FF',
+                darkPink: '#F9C784',
             },
 
             fontFamily: {
-                poppins: ["Poppins"],
-                dmserif: ["DM Serif Display"],
+                poppins: ["Arial"],
+                dmserif: ["Times New Roman"],
             },
         }
     },

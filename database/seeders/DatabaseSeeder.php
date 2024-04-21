@@ -20,7 +20,7 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(BagistoDatabaseSeeder::class);
 
-        DB::table('customers')->insert([
+        /*DB::table('customers')->insert([
             'first_name'              => "Classic User",
             'last_name'              => "Classic User",
             'email'             => "user@example.com",
@@ -32,6 +32,6 @@ class DatabaseSeeder extends Seeder
             'is_verified'       => 1,
             'created_at'        => now(),
             'updated_at'        => now(),
-        ]);
+        ]);*/
     }
 }
