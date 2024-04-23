@@ -16,7 +16,7 @@
     <x-slot:title>
         {{  $channel->home_seo['meta_title'] ?? '' }}
     </x-slot>
-    
+
     <!-- Loop over the theme customization -->
     @foreach ($customizations as $customization)
         @php ($data = $customization->options) @endphp
@@ -64,4 +64,15 @@
                 @break
         @endswitch
     @endforeach
+
+    <div id="test">
+        <div class="container bg-bgWhite">
+            <h2 class="text-navyBlue">TEST</h2>
+            <h2 class="text-mainColor">TEST mainColor</h2>
+            <h2 class="text-secondColor">TEST secondColor</h2>
+            <br>
+            <hr>
+            <br>
+        </div>
+    </div>
 </x-shop::layouts>
