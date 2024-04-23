@@ -48,7 +48,7 @@
         @if (core()->getConfigData('customer.settings.newsletter.subscription'))
             <div class="grid gap-2.5">
                 <p
-                    class="max-w-[288px] leading-[45px] text-3xl italic text-navyBlue"
+                    class="max-w-[288px] leading-[45px] text-3xl italic text-primaryColor"
                     role="heading"
                     aria-level="2"
                 >
@@ -90,10 +90,10 @@
         {!! view_render_event('bagisto.shop.layout.footer.newsletter_subscription.after') !!}
     </div>
 
-    <div class="flex justify-between  px-[60px] py-3.5 bg-[#F1EADF]">
+    <div class="flex justify-between  px-[60px] py-3.5 bg-primaryColor">
         {!! view_render_event('bagisto.shop.layout.footer.footer_text.before') !!}
 
-        <p class="text-sm text-[#4D4D4D]">
+        <p class="text-sm text-white">
             @lang('shop::app.components.layouts.footer.footer-text', ['current_year'=> date('Y') ])
         </p>
 
