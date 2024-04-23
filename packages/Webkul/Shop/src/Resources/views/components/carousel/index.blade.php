@@ -10,7 +10,7 @@
     <script type="text/x-template" id="v-carousel-template">
         <div class="flex w-full relative m-auto overflow-hidden">
             <!-- Slider -->
-            <div 
+            <div
                 class="inline-flex translate-x-0 will-change-transform transition-transform duration-700 ease-out cursor-pointer"
                 ref="sliderContainer"
             >
@@ -29,35 +29,6 @@
                     />
                 </div>
             </div>
-
-            <!-- Navigation -->
-            <span
-                class="icon-arrow-left text-2xl font-bold text-white w-auto -mt-[22px] p-3 absolute top-1/2 left-2.5 bg-black/80 transition-all opacity-30 rounded-full"
-                :class="{
-                    'cursor-not-allowed': direction == 'ltr' && currentIndex == 0,
-                    'cursor-pointer hover:opacity-100': direction == 'ltr' ? currentIndex > 0 : currentIndex <= 0
-                }"
-                role="button"
-                aria-label="@lang('shop::components.carousel.previous')"
-                tabindex="0"
-                v-if="images?.length >= 2"
-                @click="navigate('prev')"
-            >
-            </span>
-
-            <span
-                class="icon-arrow-right text-2xl font-bold text-white w-auto -mt-[22px] p-3 absolute top-1/2 right-2.5 bg-black/80 transition-all opacity-30 rounded-full"
-                :class="{
-                    'cursor-not-allowed': direction == 'rtl' && currentIndex == 0,
-                    'cursor-pointer hover:opacity-100': direction == 'rtl' ? currentIndex < 0 : currentIndex >= 0
-                }"
-                role="button"
-                aria-label="@lang('shop::components.carousel.next')"
-                tabindex="0"
-                v-if="images?.length >= 2"
-                @click="navigate('next')"
-            >
-            </span>
 
             <!-- Pagination -->
             <div class="absolute bottom-5 left-0 flex justify-center w-full">
