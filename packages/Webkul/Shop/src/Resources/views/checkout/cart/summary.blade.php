@@ -2,7 +2,7 @@
     {!! view_render_event('bagisto.shop.checkout.cart.summary.title.before') !!}
 
     <p
-        class="text-2xl font-medium"
+        class="text-2xl font-medium text-primaryColor"
         role="heading"
     >
         @lang('shop::app.checkout.cart.summary.cart-summary')
@@ -30,7 +30,7 @@
         <!-- Taxes -->
         {!! view_render_event('bagisto.shop.checkout.cart.summary.tax.before') !!}
 
-        <div 
+        <div
             class="flex justify-between text-right"
             v-for="(amount, index) in cart.base_tax_amounts"
             v-if="parseFloat(cart.base_tax_total)"
@@ -49,7 +49,7 @@
         <!-- Discount -->
         {!! view_render_event('bagisto.shop.checkout.cart.summary.discount_amount.before') !!}
 
-        <div 
+        <div
             class="flex justify-between text-right"
             v-if="cart.base_discount_amount && parseFloat(cart.base_discount_amount) > 0"
         >
@@ -84,11 +84,11 @@
 
         <!-- Apply Coupon -->
         {!! view_render_event('bagisto.shop.checkout.cart.summary.coupon.before') !!}
-        
+
         @include('shop::checkout.cart.coupon')
 
         {!! view_render_event('bagisto.shop.checkout.cart.summary.coupon.after') !!}
-   
+
         <!-- Cart Grand Total -->
         {!! view_render_event('bagisto.shop.checkout.cart.summary.grand_total.before') !!}
 
