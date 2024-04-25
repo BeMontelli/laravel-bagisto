@@ -28,6 +28,7 @@ module.exports = {
                 darkGreen: '#40994A',
                 darkBlue: '#0044F2',
                 darkPink: '#F85156',
+                primary: '#97DB4A',
             },
 
             fontFamily: {
@@ -36,7 +37,7 @@ module.exports = {
             }
         },
     },
-    
+
     darkMode: 'class',
 
     plugins: [],

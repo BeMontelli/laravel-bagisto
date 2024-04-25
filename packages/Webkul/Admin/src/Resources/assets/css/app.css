@@ -51,7 +51,7 @@
         text-transform: none;
         line-height: 1;
         color: #6b7280;
-        
+
         /* Better Font Rendering =========== */
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
@@ -62,7 +62,7 @@
     html.dark [class*=" icon-"]{
         color: #d1d5db;
     }
-    
+
     .box-shadow {
         @apply shadow-[0px_0px_0px_0px_rgba(0,0,0,0.03),0px_1px_1px_0px_rgba(0,0,0,0.03),0px_3px_3px_0px_rgba(0,0,0,0.03),0px_6px_4px_0px_rgba(0,0,0,0.02),0px_11px_4px_0px_rgba(0,0,0,0.00),0px_17px_5px_0px_rgba(0,0,0,0.00)] border-[1px] dark:border-gray-800;
     }
@@ -386,7 +386,7 @@
         transform: rotate(270deg);
         display: inline-block;
     }
-      
+
     p {
         @apply text-[14px] !leading-[17px];
     }
@@ -398,15 +398,30 @@
     }
 
     .primary-button {
-        @apply flex gap-x-1 items-center px-3 py-1.5 bg-blue-600 border border-blue-700 rounded-md text-gray-50 font-semibold cursor-pointer transition-all hover:opacity-[0.9] focus:opacity-[0.9];
+        @apply flex gap-x-1 items-center px-3 py-1.5 bg-primary border border-primary rounded-md text-gray-50 font-semibold cursor-pointer transition-all hover:opacity-[0.9] focus:opacity-[0.9];
     }
 
     .secondary-button {
-        @apply flex gap-x-1 items-center px-3 py-1.5 bg-white border-2 border-blue-600 rounded-md text-blue-600 font-semibold whitespace-nowrap cursor-pointer transition-all hover:bg-[#eff6ff61] focus:bg-[#eff6ff61] dark:border-gray-400 dark:bg-gray-800 dark:text-white dark:hover:opacity-80;
+        @apply flex gap-x-1 items-center px-3 py-1.5 bg-white border-2 border-primary rounded-md text-primary font-semibold whitespace-nowrap cursor-pointer transition-all hover:bg-[#eff6ff61] focus:bg-[#eff6ff61] dark:border-gray-400 dark:bg-gray-800 dark:text-white dark:hover:opacity-80;
     }
 
     .transparent-button {
         @apply flex gap-x-1 items-center px-3 py-1.5 border-2 border-transparent rounded-md text-gray-600 font-semibold whitespace-nowrap cursor-pointer marker:shadow appearance-none transition-all hover:bg-gray-100 dark:hover:bg-gray-950  focus:bg-gray-100;
+    }
+
+    .bg-primary,.bg-blue,.bg-blue-500,.bg-blue-600,.bg-blue-700,.bg-blue-800,.bg-blue-900{
+        background-color: theme('colors.primary') !important;
+    }
+
+    .border-primary,.border-blue,.border-blue-500,.border-blue-600,.border-blue-700,.border-blue-800,.border-blue-900{
+        border-color: theme('colors.primary') !important;
+    }
+    .border-primary,.border-blue,.border-blue-500,.border-blue-600,.border-blue-700,.border-blue-800,.border-blue-900{
+        border-color: theme('colors.primary') !important;
+    }
+
+    .text-blue,.text-blue-500,.text-blue-600{
+        color: theme('colors.primary') !important;
     }
 
     .journal-scroll::-webkit-scrollbar {
@@ -470,7 +485,7 @@
 
 	.label-completed,
     .label-active {
-		@apply bg-green-600;
+		@apply bg-primary;
 	}
 
 	.label-closed {
